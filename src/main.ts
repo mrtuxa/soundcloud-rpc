@@ -87,7 +87,7 @@ async function createWindow() {
             details: 'Listening to Soundcloud',
             state: 'Paused',
             largeImageKey: 'idling',
-            largeImageText: 'github.com/richardhbtz/soundcloud-rpc',
+            largeImageText: ':3',
             smallImageKey: 'soundcloud-logo',
             smallImageText: '',
             instance: false,
