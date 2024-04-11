@@ -2,7 +2,7 @@ import { app, BrowserWindow, Menu } from 'electron';
 import { Client as DiscordRPCClient } from 'discord-rpc'; 
 
 const rpc = new DiscordRPCClient({ transport: 'ipc' }); 
-const clientId = '1090770350251458592'; 
+const clientId = '1228003628980244510'; 
 
 rpc.login({ clientId }).catch(console.error);
 
@@ -73,7 +73,7 @@ async function createWindow() {
           details: shortenString(trackInfo.title.replace(/\n.*/s, '').replace("Current track:", "")),
           state: `by ${shortenString(trackInfo.author)}`,
           largeImageKey: artworkUrl.replace("50x50.", "500x500."),
-          largeImageText: 'github.com/richardhbtz/soundcloud-rpc',
+          // largeImageText: '',
           smallImageKey: 'soundcloud-logo',
           smallImageText: 'Soundcloud',
           instance: false,
